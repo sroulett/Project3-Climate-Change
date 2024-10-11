@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precipitation Overlay</title>
+    <style>
+        #mapCanvas {
+            position: relative;
+            width: 100%;
+            height: auto;
+            max-height: 600px; /* Adjust the height limit as needed */
+            overflow: hidden;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        #slider {
+            margin: 20px;
+        }
+        #yearDisplay {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Precipitation Overlay</h1>
+    <div id="yearDisplay">Year: 2023</div>
+    <input type="range" id="slider" min="2000" max="2022" step="1" value="2022" oninput="updateYear(this.value)">
+    <div id="mapCanvas"></div>
+
+    <script src="overlay.js"></script>
+</body>
+</html>
