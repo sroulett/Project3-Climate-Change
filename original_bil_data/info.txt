@@ -1,0 +1,1 @@
+The folder contains the original BIL data from https://prism.oregonstate.edu/recent/. We are premitted to use it as long as we cite it. Billtopng.py is what converts the original data to pngs for further use
