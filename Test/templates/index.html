@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Dashboard</title>
+    <!-- <link rel="stylesheet" href="../static/styles.css"> -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Average Temperature per Decade</h1>
+    <select id="countryDropdown" onchange="optionChanged(this.value)"></select>
+        <!-- Options will be populated with JavaScript -->
+    </select>
+    <div id="lineChart"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
